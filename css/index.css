@@ -1,0 +1,43 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.bg-hero{
+    background-image: url('../assets/images/bg-hero.jpg');
+}
+
+.title-primary{
+background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do azul profundo da imagem até um ciano brilhante */    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;;
+}
+
+.color-secundary{
+    color: #ffffff;
+}
+
+/* Animação suave de subida */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animação de flutuação sutil para a imagem */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
