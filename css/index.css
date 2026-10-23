@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@source "..";
+
 /* geral */
 body { 
     font-family: 'Inter', sans-serif; 
