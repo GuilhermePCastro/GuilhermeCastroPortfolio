@@ -1,19 +1,43 @@
+/* geral */
 body { 
     font-family: 'Inter', sans-serif; 
 }
 
+/* Estado inicial: invisíveis e deslocados para as laterais */
+.animar-esquerda {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animar-direita {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animar-cima {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animar-baixo {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Estado final quando a animação é ativada pelo JavaScript */
+.visivel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*Header e Hero */
+
 .bg-hero{
     background-image: url('../assets/images/bg-hero.webp');
-}
-
-.title-primary{
-background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do azul profundo da imagem até um ciano brilhante */    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;;
-}
-
-.color-secundary{
-    color: #ffffff;
 }
 
 /* Animação suave de subida */
@@ -41,3 +65,40 @@ background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do
 .animate-float {
     animation: float 4s ease-in-out infinite;
 }
+
+/*Serviço */
+.title-primary{
+background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do azul profundo da imagem até um ciano brilhante */    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.color-secundary{
+    color: #ffffff;
+}
+
+
+/*Diferenciais */
+.bg-btn-diferenciais{
+    background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); 
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-btn-diferenciais:hover{
+    color: white;
+    transform: scale(1.04);
+    transition-duration: 300ms;
+    transition-delay:50ms
+    
+}
+
+.pilula-diferencial {
+    color: #1278a4; /* Um azul claro elegante que contrasta bem no fundo escuro */
+    background-color: #93c4fd68; /* Azul bem escuro e fechado */
+    border-color: #1278a4; /* Borda em um tom de azul mais evidente para dar acabamento */
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
