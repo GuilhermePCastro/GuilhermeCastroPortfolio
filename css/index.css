@@ -2,9 +2,12 @@
 @source "..";
 
 /* geral */
-body { 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif; 
 }
+
 
 .color-primary{
     color:#1278a4;
