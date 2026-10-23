@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @tailwindcss/cli -i ./css/index.css -o ./dist/output.css --minify",
-  "dev": "npx @tailwindcss/cli -i ./css/index.css -o ./dist/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./css/index.css -o ./dist/output.css --watch",
+    "build:inline": "node script/build-inline.js",
+    "release": "npx @tailwindcss/cli -i ./css/index.css -o ./dist/output.css --minify && node script/build-inline.js"
   },
   "repository": {
     "type": "git",
