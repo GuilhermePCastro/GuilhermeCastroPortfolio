@@ -3,6 +3,10 @@ body {
     font-family: 'Inter', sans-serif; 
 }
 
+.color-primary{
+    color:#1278a4;
+}
+
 /* Estado inicial: invisíveis e deslocados para as laterais */
 .animar-esquerda {
     opacity: 0;
@@ -102,3 +106,18 @@ background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do
     
 }
 
+/*Meus Trabalhos*/
+.bg-portifolio{
+    background: linear-gradient(to right, #0b183b, #10415a, #276e92, #0a678f); 
+    
+}
+
+.link-portifolio{
+    transition: all 0.3s ease-in-out;
+}
+.link-portifolio:hover{
+    transition-duration: 300ms;
+    transition-delay:50ms;
+    text-decoration: underline;
+
+}
