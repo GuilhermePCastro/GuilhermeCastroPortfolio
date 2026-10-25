@@ -127,3 +127,9 @@ background: linear-gradient(to right, #0b183b, #10415a, #1e5672, #1278a4); /* Do
     text-decoration: underline;
 
 }
+
+/*Sobre mim*/
+.bg-perfil{
+     background: linear-gradient(to right, #0b183b, #11313f, #10415a, #276e92); 
+    
+}
