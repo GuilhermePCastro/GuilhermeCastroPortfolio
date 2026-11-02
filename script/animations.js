@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const textoServ = entry.target.querySelector("#serv-bloco-titulo");
                 const proj1 = entry.target.querySelector("#projeto1");
                 const proj2 = entry.target.querySelector("#projeto2");
+                const proj3 = entry.target.querySelector("#projeto3");
                 const titPort = entry.target.querySelector("#titulo-portifolio");
                 const sobEsq = entry.target.querySelector("#sobreMimEsq");
                 const sobDit = entry.target.querySelector("#sobreMimDit");
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (textoServ) textoServ.classList.add("visivel");
                 if (proj1) proj1.classList.add("visivel");
                 if (proj2) proj2.classList.add("visivel");
+                if (proj3) proj3.classList.add("visivel");
                 if (titPort) titPort.classList.add("visivel");
                 if (sobEsq) sobEsq.classList.add("visivel");
                 if (sobDit) sobDit.classList.add("visivel");
